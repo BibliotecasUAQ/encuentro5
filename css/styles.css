@@ -91,12 +91,14 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-size: calc(1.325rem + 0.9vw);
-  color: #087990;
+  font-size:3vh;
+  color: #30b0ca;
+  padding: 1rem;
 }
 @media (min-width: 1200px) {
   h2, .h2 {
-    font-size: 2rem;
+    font-size: 3vh;
+    padding: 1rem;
   }
 }
 
@@ -643,6 +645,7 @@ progress {
   margin-top: calc(var(--bs-gutter-y) * -1);
   margin-right: calc(var(--bs-gutter-x) * -.5);
   margin-left: calc(var(--bs-gutter-x) * -.5);
+  padding: 2%;
 }
 .row > * {
   flex-shrink: 0;
@@ -10925,7 +10928,7 @@ html {
   font-weight: 700;
 }
 #mainNav .navbar-brand {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.582);
 }
 #mainNav .navbar-nav {
   margin-top: 1rem;
@@ -10962,11 +10965,11 @@ html {
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
     color: #fff;
-    background: #1a38bc;
+    background: #1a38bc00;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
     color: #fff;
-    background: #1a38bc86;
+    background: #1a38bc00;
   }
 
   #mainNav.navbar-shrink {
@@ -10997,7 +11000,7 @@ html {
 
 .masthead {
   padding-top: calc(6rem + 74px);
-  padding-bottom: 6rem;
+  
 }
 .masthead .masthead-heading {
   font-size: 2.75rem;
@@ -11035,9 +11038,9 @@ html {
   position: absolute;
   top: 0;
   left: 0;
-  transition: all 0.2s ease-in-out;
+  transition: all .2s ease-in-out;
   opacity: 0;
-  background-color: rgba(99, 103, 117, 0.479);
+  background-color: rgba(70, 92, 163, 0.137);
 }
 .portfolio .portfolio-item .portfolio-item-caption:hover {
   opacity: .7;
@@ -11080,4 +11083,15 @@ html {
 
 .fechas {
 padding-left: 30%;
+}
+
+#about {
+  padding-top: 0px;
+}
+
+.logos {
+  width: 50vmin;
+  translate: 0 -3rem;
+  padding-bottom: 0px;
+  border-radius: 2rem 2rem 0rem 0rem;
 }
