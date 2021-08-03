@@ -11095,3 +11095,13 @@ padding-left: 30%;
   padding-bottom: 0px;
   border-radius: 2rem 2rem 0rem 0rem;
 }
+
+.mail {
+  font-weight: 600;
+  font-size: xx-large;
+}
+
+.comite_li {
+  text-align: center;
+  list-style-type:none
+}
