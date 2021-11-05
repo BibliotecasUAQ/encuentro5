@@ -1,0 +1,240 @@
+:root {
+    --naranjoso: rgba(75, 128, 196, 0.411);
+    --naranjilla: rgba(181, 253, 255, 0.61);
+    --azuloso: #2c3e50;
+    --horas: rgba(238, 236, 255, 0.788);
+    --sala1: rgba(168, 149, 255, 0.11);
+  }
+
+#programa {
+    background-color: #ffffff;
+}
+
+
+.cont {
+    padding-left: 10%;
+    display: grid;
+    width: 90%;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(40px, auto);
+    grid-template-areas:    "blank1 cname1 cname1 cname1 cname1 blank2"
+                            "blank1 cname2 cname2 cname2 cname2 blank2"
+                            "blank1 cname3 cname3 cname3 cname3 blank2"
+                            "blank1 cname4 cname4 cname4 cname4 blank2"
+                            "blank1 cname5 cname5 cname5 cname5 blank2"
+                            "blank1 cname6 cname6 cname6 cname6 blank2"
+                            "blank1 cname7 cname7 cname7 cname7 blank2"
+                            "d1 d1 d1 d1 d1 d1"
+                            "ho1-01 s1-01 n1-01 n1-01 n1-01 n1-01"
+                            "ho1-02 s1-02 n1-02 n1-02 n1-02 n1-02"
+                            "ho1-02 s1-03 n1-03 n1-03 n1-03 n1-03"
+                            "ho1-03 s1-04 n1-04 n1-04 n1-04 n1-04"
+                            "ho1-03 s1-05 n1-05 n1-05 n1-05 n1-05"
+                            "ho1-04 s1-06 n1-06 n1-06 n1-06 n1-06"
+                            "ho1-05 s1-07 n1-07 n1-07 n1-07 n1-07"
+                            "ho1-05 s1-08 n1-08 n1-08 n1-08 n1-08"
+                            "ho1-06 s1-09 n1-09 n1-09 n1-09 n1-09"
+                            "d2 d2 d2 d2 d2 d2"
+                            "ho1-07 s1-10 n1-10 n1-10 n1-10 n1-10"
+                            "ho1-08 s1-11 n1-11 n1-11 n1-11 n1-11"
+                            "ho1-09 s1-12 n1-12 n1-12 n1-12 n1-12"
+                            "ho1-09 s1-13 n1-13 n1-13 n1-13 n1-13"
+                            "ho1-10 s1-14 n1-14 n1-14 n1-14 n1-14"
+                            "ho1-11 s1-15 n1-15 n1-15 n1-15 n1-15"
+                            "ho1-11 s1-16 n1-16 n1-16 n1-16 n1-16"
+                            "ho1-12 s1-17 n1-17 n1-17 n1-17 n1-17"
+                            "ho1-12 s1-18 n1-18 n1-18 n1-18 n1-18"
+                            "ho1-13 s1-19 n1-19 n1-19 n1-19 n1-19"
+                            "d3 d3 d3 d3 d3 d3"
+                            "ho1-14 s1-20 n1-20 n1-20 n1-20 n1-20"
+                            "ho1-14 s1-21 n1-21 n1-21 n1-21 n1-21"
+                            "ho1-15 s1-22 n1-22 n1-22 n1-22 n1-22"
+                            "ho1-16 s1-23 n1-23 n1-23 n1-23 n1-23"
+                            "ho1-16 s1-24 n1-24 n1-24 n1-24 n1-24"
+                            "ho1-17 s1-25 n1-25 n1-25 n1-25 n1-25"
+                            "ho1-18 s1-26 n1-26 n1-26 n1-26 n1-26"
+                            "ho1-19 s1-27 n1-27 n1-27 n1-27 n1-27"
+                            "ho1-20 s1-28 n1-28 n1-28 n1-28 n1-28";
+    grid-gap: .1rem;
+    justify-items: stretch;
+    align-items: stretch;
+    color: rgb(72, 72, 77);
+    font-weight: bolder;
+}
+
+.cont > div {
+    display: grid;
+    font-size: 2vw;
+}
+
+.d1, .d2, .d3 {
+    background-color: var(--naranjoso);
+    text-align: center;
+    border-top: 20px solid whitesmoke;
+}
+
+.d1 {grid-area: d1; padding-top: 2rem;}
+.d2 {grid-area: d2; padding-top: 2rem;}
+.d3 {grid-area: d3; padding-top: 2rem;}
+
+.ho1-01, .ho1-02, .ho1-03, .ho1-04, .ho1-05, .ho1-06, .ho1-07, .ho1-08, .ho1-09,
+.ho1-10, .ho1-11, .ho1-12, .ho1-13, .ho1-14, .ho1-15, .ho1-16, .ho1-17, .ho1-18, .ho1-19, .ho1-20 {
+    background-color: var(--horas);
+    border: 3px solid var(--azuloso);
+    color: var(--azuloso);
+    border-radius: 10px 0 0 10px;
+    font-size: 1.5vw !important;
+    align-content: center;
+    justify-content: center;
+}
+
+.blank1 {grid-area: blank1;}
+.blank2 {grid-area: blank2;}
+.cname1 {grid-area: cname1;  background: rgb(255,115,115);
+    background: linear-gradient(90deg, rgba(255,115,115,0) 0%, rgba(255,185,53,0.9280742459396751) 100%); }
+.cname2 {grid-area: cname2; background: rgb(255,185,53);
+    background: linear-gradient(90deg, rgba(255,185,53,0) 0%, rgba(243,255,115,1) 75%); }
+.cname3 {grid-area: cname3; background: rgb(255,185,53);
+    background: linear-gradient(90deg, rgba(255,185,53,0) 0%, rgba(93,255,68,1) 75%); }
+.cname4 {grid-area: cname4; background: rgb(255,185,53);
+    background: linear-gradient(90deg, rgba(255,185,53,0) 0%, rgba(68,254,255,1) 75%); }
+.cname5 {grid-area: cname5; background: rgb(255,185,53);
+    background: linear-gradient(90deg, rgba(255,185,53,0) 0%, rgba(68,77,255,1) 75%); }
+.cname6 {grid-area: cname6; background: rgb(255,185,53);
+    background: linear-gradient(90deg, rgba(255,185,53,0) 0%, rgba(158,68,255,1) 75%); }
+.cname7 {grid-area: cname7; background: rgb(255,185,53);
+    background: linear-gradient(90deg, rgba(255,185,53,0) 0%, rgba(255,68,253,1) 75%); }
+.cname1, .cname2, .cname3, .cname4, .cname5, .cname6, .cname7 {align-content: center; font-size: 1.5vw !important;}
+
+.ho1-01 {grid-area: ho1-01;}
+.ho1-02 {grid-area: ho1-02;}
+.ho1-03 {grid-area: ho1-03;}
+.ho1-04 {grid-area: ho1-04;}
+.ho1-05 {grid-area: ho1-05;}
+.ho1-06 {grid-area: ho1-06;}
+.ho1-07 {grid-area: ho1-07;}
+.ho1-08 {grid-area: ho1-08;}
+.ho1-09 {grid-area: ho1-09;}
+.ho1-10 {grid-area: ho1-10;}
+.ho1-11 {grid-area: ho1-11;}
+.ho1-12 {grid-area: ho1-12;}
+.ho1-13 {grid-area: ho1-13;}
+.ho1-14 {grid-area: ho1-14;}
+.ho1-15 {grid-area: ho1-15;}
+.ho1-16 {grid-area: ho1-16;}
+.ho1-17 {grid-area: ho1-17;}
+.ho1-18 {grid-area: ho1-18;}
+.ho1-19 {grid-area: ho1-19;}
+.ho1-20 {grid-area: ho1-20;}
+
+.s1-01, .s1-02, .s1-03, .s1-04, .s1-05, .s1-06, .s1-07, .s1-08, .s1-09, .s1-10, .s1-11,
+.s1-12, .s1-13, .s1-14, .s1-15, .s1-16, .s1-17, .s1-18, .s1-19, .s1-20, .s1-21, .s1-22,
+.s1-23, .s1-24, .s1-25, .s1-26, .s1-27, .s1-28 {
+    align-content: center;
+    justify-content: center;
+    border-top: 2px solid var(--azuloso);
+    border-bottom: 2px solid var(--azuloso);
+    background-color: var(--sala1);
+}
+
+.s1-01 {grid-area: s1-01; border-right: 15px solid orange;}
+.s1-02 {grid-area: s1-02; border-right: 15px solid turquoise;}
+.s1-03 {grid-area: s1-03; border-right: 15px solid blue;}
+.s1-04 {grid-area: s1-04; border-right: 15px solid turquoise;}
+.s1-05 {grid-area: s1-05; border-right: 15px solid blue;}
+.s1-06 {grid-area: s1-06; border-right: 15px solid turquoise;}
+.s1-07 {grid-area: s1-07; border-right: 15px solid blue;}
+.s1-08 {grid-area: s1-08; border-right: 15px solid turquoise;}
+.s1-09 {grid-area: s1-09; border-right: 15px solid green;}
+.s1-10 {grid-area: s1-10; border-right: 15px solid blue;}
+.s1-11 {grid-area: s1-11; border-right: 15px solid blue;}
+.s1-12 {grid-area: s1-12; border-right: 15px solid blue;}
+.s1-13 {grid-area: s1-13; border-right: 15px solid blue;}
+.s1-14 {grid-area: s1-14; border-right: 15px solid yellow;}
+.s1-15 {grid-area: s1-15; border-right: 15px solid turquoise;}
+.s1-16 {grid-area: s1-16; border-right: 15px solid blue;}
+.s1-17 {grid-area: s1-17; border-right: 15px solid turquoise;}
+.s1-18 {grid-area: s1-18; border-right: 15px solid blue;}
+.s1-19 {grid-area: s1-19; border-right: 15px solid gray;}
+.s1-20 {grid-area: s1-20; border-right: 15px solid blue;}
+.s1-21 {grid-area: s1-21; border-right: 15px solid blue;}
+.s1-22 {grid-area: s1-22; border-right: 15px solid yellow;}
+.s1-23 {grid-area: s1-23; border-right: 15px solid blue;}
+.s1-24 {grid-area: s1-24; border-right: 15px solid blue;}
+.s1-25 {grid-area: s1-25; border-right: 15px solid purple;}
+.s1-26 {grid-area: s1-26; border-right: 15px solid green;}
+.s1-27 {grid-area: s1-27; border-right: 15px solid orange;}
+.s1-28 {grid-area: s1-28; border-right: 15px solid gray;}
+
+.n1-01, .n1-02, .n1-03, .n1-04, .n1-05, .n1-06, .n1-07, .n1-08, .n1-09, .n1-10,
+.n1-11, .n1-12, .n1-13, .n1-14, .n1-15, .n1-16, .n1-17, .n1-18, .n1-19, .n1-20,
+.n1-21, .n1-22, .n1-23, .n1-24, .n1-25, .n1-26, .n1-27, .n1-28 {
+    padding: 1rem;
+    background-color: var(--azuloso);
+    color: white;
+    border-radius: 0 10px 10px 0;
+}
+
+.n1-01 {grid-area: n1-01;}
+.n1-02 {grid-area: n1-02;}
+.n1-03 {grid-area: n1-03;}
+.n1-04 {grid-area: n1-04;}
+.n1-05 {grid-area: n1-05;}
+.n1-06 {grid-area: n1-06;}
+.n1-07 {grid-area: n1-07;}
+.n1-08 {grid-area: n1-08;}
+.n1-09 {grid-area: n1-09;}
+.n1-10 {grid-area: n1-10;}
+.n1-11 {grid-area: n1-11;}
+.n1-12 {grid-area: n1-12;}
+.n1-13 {grid-area: n1-13;}
+.n1-14 {grid-area: n1-14;}
+.n1-15 {grid-area: n1-15;}
+.n1-16 {grid-area: n1-16;}
+.n1-17 {grid-area: n1-17;}
+.n1-18 {grid-area: n1-18;}
+.n1-19 {grid-area: n1-19;}
+.n1-20 {grid-area: n1-20;}
+.n1-21 {grid-area: n1-21;}
+.n1-22 {grid-area: n1-22;}
+.n1-23 {grid-area: n1-23;}
+.n1-24 {grid-area: n1-24;}
+.n1-25 {grid-area: n1-25;}
+.n1-26 {grid-area: n1-26;}
+.n1-27 {grid-area: n1-27;}
+.n1-28 {grid-area: n1-28;}
+
+.n1a {
+    text-decoration: none;
+    color: rgb(130, 138, 247);
+    font-size: 2vw;
+}
+
+.n1a:hover {
+    color: rgb(130, 138, 247);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+
+
+.d1 span, .d2 span, .d3 span {
+    align-self: center;
+    font-size: 1.8vw;
+    padding-left: .3rem;
+/*     justify-self: center; */
+}
+
+.autor {
+    padding-left: .3rem;
+    font-size: 1.3vw;
+    color: rgba(255, 255, 255, 0.836);
+}
+
+.autor span {
+    font-size: 1.5vw;
+}
+
+.pos {
+    font-size: 1.1vw;
+    color: rgb(237, 97, 255);
+}
