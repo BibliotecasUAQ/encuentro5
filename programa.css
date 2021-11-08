@@ -2,7 +2,7 @@
     --naranjoso: rgba(75, 128, 196, 0.411);
     --naranjilla: rgba(181, 253, 255, 0.61);
     --azuloso: #2c3e50;
-    --horas: rgba(238, 236, 255, 0.788);
+    --horas: rgba(203, 199, 247, 0.644);
     --sala1: rgba(168, 149, 255, 0.11);
   }
 
@@ -86,6 +86,7 @@
     font-size: 1.5vw !important;
     align-content: center;
     justify-content: center;
+    color: darkblue;
 }
 
 .blank1 {grid-area: blank1;}
@@ -135,6 +136,7 @@
     border-top: 2px solid var(--azuloso);
     border-bottom: 2px solid var(--azuloso);
     background-color: var(--sala1);
+    color: cornflowerblue;
 }
 
 .s1-01 {grid-area: s1-01; border-right: 15px solid orange;}
@@ -207,7 +209,7 @@
 .n1a {
     text-decoration: none;
     color: rgb(130, 138, 247);
-    font-size: 2vw;
+    font-size: clamp(14px, 2.2vw, 25px);
 }
 
 .n1a:hover {
@@ -226,15 +228,17 @@
 
 .autor {
     padding-left: .3rem;
-    font-size: 1.3vw;
+    font-size: clamp(12px, 1.5vw, 20px);
     color: rgba(255, 255, 255, 0.836);
 }
 
-.autor span {
-    font-size: 1.5vw;
-}
+
 
 .pos {
     font-size: 1.1vw;
     color: rgb(237, 97, 255);
+}
+
+.moderador {
+    color: rgb(142, 185, 139);
 }
